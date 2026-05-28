@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Build | Liquid BTO Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="liquid-bg" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header liquid-panel">
+    <a class="logo" href="index.html"><span class="logo-mark">BTO</span><span>Liquid BTO Lab</span></a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a class="active" href="custom.html">Custom</a>
+      <a href="models.html">Presets</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-title section-shell reveal">
+      <p class="eyebrow">Custom Configurator</p>
+      <h1>パーツごとに選ぶ、<span>見やすいBTO構成</span>。</h1>
+      <p class="lead">各パーツに専用の枠を用意しました。用途、CPU、GPU、メモリ、ストレージ、ケースを1つずつ選ぶと、右側に概算見積もりが表示されます。</p>
+    </section>
+
+    <section class="section-shell layout-form reveal">
+      <form class="parts-grid" id="btoForm">
+        <article class="part-card liquid-panel">
+          <div class="part-head"><span>01</span><div><h2>用途</h2><p>何に一番使うか</p></div></div>
+          <select id="useCase"><option value="0">ゲーム・普段使い</option><option value="18000">配信もしたい</option><option value="32000">動画編集重視</option><option value="48000">AI/開発重視</option></select>
+        </article>
+
+        <article class="part-card liquid-panel">
+          <div class="part-head"><span>02</span><div><h2>CPU</h2><p>処理速度と作業の快適さ</p></div></div>
+          <select id="cpu"><option value="28000">Ryzen 5 / Core i5</option><option value="48000">Ryzen 7 / Core i7</option><option value="76000">Ryzen 9 / Core i9</option></select>
+        </article>
+
+        <article class="part-card liquid-panel">
+          <div class="part-head"><span>03</span><div><h2>GPU</h2><p>ゲーム・映像・AI性能</p></div></div>
+          <select id="gpu"><option value="52000">ミドルGPU</option><option value="98000">ハイクラスGPU</option><option value="168000">最上位寄りGPU</option></select>
+        </article>
+
+        <article class="part-card liquid-panel">
+          <div class="part-head"><span>04</span><div><h2>メモリ</h2><p>同時作業の余裕</p></div></div>
+          <select id="ram"><option value="12000">16GB</option><option value="24000">32GB</option><option value="46000">64GB</option></select>
+        </article>
+
+        <article class="part-card liquid-panel">
+          <div class="part-head"><span>05</span><div><h2>ストレージ</h2><p>ゲーム・動画・素材の保存</p></div></div>
+          <select id="storage"><option value="12000">1TB NVMe SSD</option><option value="26000">2TB NVMe SSD</option><option value="52000">4TB NVMe SSD</option></select>
+        </article>
+
+        <article class="part-card liquid-panel">
+          <div class="part-head"><span>06</span><div><h2>ケース</h2><p>見た目と空冷の雰囲気</p></div></div>
+          <select id="caseStyle"><option value="0">シンプル黒</option><option value="12000">白系ガラスケース</option><option value="22000">RGB液体研究所仕様</option></select>
+        </article>
+
+        <article class="part-card liquid-panel wide-card">
+          <div class="part-head"><span>07</span><div><h2>相談メモ</h2><p>希望があれば自由に記入</p></div></div>
+          <textarea id="note" placeholder="例：白いケース、Apexを高FPS、動画編集もしたい、なるべく静音など"></textarea>
+        </article>
+      </form>
+
+      <aside class="summary-box">
+        <p class="eyebrow">Estimate</p>
+        <div class="total" id="totalPrice">¥0</div>
+        <small>概算です。正式価格は在庫・相場・工賃で変動します。</small>
+        <div class="summary-list" id="summaryList">
+          <div><span>構成</span><strong>未選択</strong></div>
+        </div>
+        <button class="button primary full" type="button" id="copyOrder">構成内容をコピー</button>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>Liquid BTO Lab / Custom Configurator</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
