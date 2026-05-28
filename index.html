@@ -3,133 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AImodel | Creative AI Landing</title>
-  <meta name="description" content="A stylish landing page for an AI model project." />
+  <title>AImodel | Liquid Glass AI Studio</title>
+  <meta name="description" content="Liquid glass styled multi-page AI studio website." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="liquid-bg" aria-hidden="true"><span></span><span></span><span></span></div>
   <div class="cursor-glow" aria-hidden="true"></div>
 
-  <header class="site-header">
-    <a class="logo" href="#top" aria-label="AImodel home">
-      <span class="logo-mark">AI</span>
-      <span>AImodel</span>
-    </a>
-
-    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-
+  <header class="site-header liquid-panel">
+    <a class="logo" href="index.html"><span class="logo-mark">AI</span><span>AImodel</span></a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="site-nav" aria-label="Main navigation">
-      <a href="#features">Features</a>
-      <a href="#workflow">Workflow</a>
-      <a href="#showcase">Showcase</a>
-      <a class="nav-cta" href="#contact">Start</a>
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="models.html">Models</a>
+      <a href="lab.html">Lab</a>
+      <a href="docs.html">Docs</a>
+      <a class="nav-cta" href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <main id="top">
-    <section class="hero section-shell">
+  <main>
+    <section class="hero section-shell two-column">
       <div class="hero-copy reveal">
-        <p class="eyebrow">Creative AI Interface</p>
-        <h1>思考を、<span>美しい体験</span>に変えるAIサイト。</h1>
-        <p class="hero-text">
-          AImodelは、AIプロジェクトを印象的に見せるためのモダンなランディングページです。
-          透明感のあるUI、軽いアニメーション、レスポンシブ設計で、GitHub Pagesにもそのまま公開できます。
-        </p>
+        <p class="eyebrow">Liquid Glass AI Studio</p>
+        <h1>AIの体験を、<span>水のように透き通るUI</span>で魅せる。</h1>
+        <p class="hero-text">AImodelは、AIモデル・研究・アプリ構想を美しく見せるためのマルチページサイトです。透明なレイヤー、柔らかい光、流体っぽいカードで、普通の静的サイトを一気にプロダクトサイト化します。</p>
         <div class="hero-actions">
-          <a class="button primary" href="#features">機能を見る</a>
-          <a class="button ghost" href="#showcase">デザインを見る</a>
+          <a class="button primary" href="models.html">モデルを見る</a>
+          <a class="button ghost" href="lab.html">実験室へ</a>
         </div>
       </div>
 
-      <div class="hero-visual reveal" aria-label="AI dashboard preview">
-        <div class="orb orb-one"></div>
-        <div class="orb orb-two"></div>
-        <article class="glass-card main-card">
-          <div class="card-topline">
-            <span></span><span></span><span></span>
-          </div>
-          <div class="ai-chip">MODEL STATUS</div>
-          <h2>Neural Studio</h2>
-          <p>Prompt clarity, visual design, and interaction flow are optimized in one place.</p>
+      <div class="hero-visual reveal">
+        <article class="liquid-card hero-card tilt-card">
+          <div class="glass-shine"></div>
+          <div class="card-topline"><span></span><span></span><span></span></div>
+          <p class="ai-chip">REALTIME MODEL SURFACE</p>
+          <h2>Neural Liquid Core</h2>
+          <p>Input, memory, safety, recommendation, and UI feedback flow like layered glass.</p>
+          <div class="liquid-meter"><span style="--w: 92%"></span></div>
           <div class="metric-grid">
-            <div><strong>98%</strong><span>Design Fit</span></div>
-            <div><strong>24ms</strong><span>UI Motion</span></div>
-            <div><strong>4.9</strong><span>Experience</span></div>
+            <div><strong>92%</strong><span>Clarity</span></div>
+            <div><strong>6</strong><span>Pages</span></div>
+            <div><strong>∞</strong><span>Ideas</span></div>
           </div>
         </article>
       </div>
     </section>
 
-    <section id="features" class="features section-shell">
+    <section class="section-shell page-strip reveal">
+      <a class="mini-page liquid-panel" href="about.html"><span>01</span><strong>About</strong><small>思想とコンセプト</small></a>
+      <a class="mini-page liquid-panel" href="models.html"><span>02</span><strong>Models</strong><small>AIモデル一覧</small></a>
+      <a class="mini-page liquid-panel" href="lab.html"><span>03</span><strong>Lab</strong><small>実験とプロトタイプ</small></a>
+      <a class="mini-page liquid-panel" href="docs.html"><span>04</span><strong>Docs</strong><small>設計ドキュメント</small></a>
+    </section>
+
+    <section class="features section-shell">
       <div class="section-heading reveal">
-        <p class="eyebrow">Features</p>
-        <h2>静的サイトなのに、ちゃんと“作り込んだ感”。</h2>
+        <p class="eyebrow">Experience</p>
+        <h2>ただ透明なだけじゃない、奥行きのあるリキッドグラス。</h2>
       </div>
       <div class="feature-grid">
-        <article class="feature-card reveal">
-          <span class="feature-icon">✦</span>
-          <h3>Glass UI</h3>
-          <p>背景のグラデーションと半透明カードで、AI系プロダクトらしい未来感を演出。</p>
-        </article>
-        <article class="feature-card reveal">
-          <span class="feature-icon">⌁</span>
-          <h3>Responsive</h3>
-          <p>スマホでも崩れにくい余白・文字サイズ・ナビゲーションを設定済み。</p>
-        </article>
-        <article class="feature-card reveal">
-          <span class="feature-icon">◎</span>
-          <h3>Motion</h3>
-          <p>スクロール表示、カーソルライト、カードの浮遊感で自然にリッチな印象へ。</p>
-        </article>
+        <article class="feature-card liquid-panel reveal"><span class="feature-icon">◌</span><h3>Layered Frost</h3><p>複数の半透明レイヤーとぼかしで、iOS風の奥行きを表現。</p></article>
+        <article class="feature-card liquid-panel reveal"><span class="feature-icon">≈</span><h3>Fluid Motion</h3><p>ホバー、スクロール、カーソル追従で水面っぽい動きを追加。</p></article>
+        <article class="feature-card liquid-panel reveal"><span class="feature-icon">✧</span><h3>Multi Page</h3><p>紹介・モデル・実験・資料・問い合わせまでページ展開済み。</p></article>
       </div>
     </section>
 
-    <section id="workflow" class="workflow section-shell">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Workflow</p>
-        <h2>アイデアから公開まで、シンプルに。</h2>
-      </div>
-      <div class="timeline">
-        <div class="timeline-item reveal"><span>01</span><div><h3>Concept</h3><p>AIで何を見せたいかを1つのメッセージに整理。</p></div></div>
-        <div class="timeline-item reveal"><span>02</span><div><h3>Design</h3><p>余白・色・カードUIで第一印象を強くする。</p></div></div>
-        <div class="timeline-item reveal"><span>03</span><div><h3>Deploy</h3><p>GitHub Pagesに置けば、静的サイトとしてすぐ公開可能。</p></div></div>
-      </div>
-    </section>
-
-    <section id="showcase" class="showcase section-shell reveal">
+    <section class="showcase section-shell reveal">
       <div>
-        <p class="eyebrow">Showcase</p>
-        <h2>このまま研究・アプリ・AI機能紹介にも使える。</h2>
-        <p>
-          文章を差し替えれば、StepLink、AIチャットボット、研究発表用のプロジェクト紹介ページにも転用できます。
-        </p>
+        <p class="eyebrow">Interface Map</p>
+        <h2>AIプロジェクトを“ちゃんとして見える”構成に。</h2>
+        <p>研究発表、StepLink、AIチャットボット、ポートフォリオ用のどれにも転用しやすい構成です。</p>
       </div>
-      <div class="showcase-panel">
+      <div class="showcase-panel liquid-card">
         <div class="signal-line"></div>
         <div class="code-window">
-          <code>const idea = "未来を設計するAI体験";</code>
-          <code>design.render(idea);</code>
-          <code>deploy.to("GitHub Pages");</code>
+          <code>glass.layer("hero", blur: 28)</code>
+          <code>model.memory.connect("user-flow")</code>
+          <code>pages.deploy(["about", "models", "lab"])</code>
         </div>
       </div>
-    </section>
-
-    <section id="contact" class="contact section-shell reveal">
-      <p class="eyebrow">Ready?</p>
-      <h2>次は、このサイトを君のプロジェクト仕様に寄せよう。</h2>
-      <a class="button primary" href="https://github.com/tai928/AImodel" target="_blank" rel="noreferrer">GitHubで見る</a>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>© 2026 AImodel. Built with HTML, CSS and JavaScript.</p>
-  </footer>
-
+  <footer class="site-footer"><p>© 2026 AImodel. Liquid glass multi-page website.</p></footer>
   <script src="script.js"></script>
 </body>
 </html>
